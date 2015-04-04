@@ -5,3 +5,8 @@ http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorT
 
 TI SensorTag connects via Bluetooth, Node.js grabs the data
 will eventually send it out via MQTT (over Wifi) to an ActiveMQ broker (running on laptop).
+
+sudo npm install . 
+
+sudo node index.js
+sudo node temp_humidity.js
