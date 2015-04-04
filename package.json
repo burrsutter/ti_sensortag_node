@@ -2,7 +2,7 @@
   "name": "ti_sensortag_node",
   "version": "1.0.0",
   "description": "TI SensorTag",
-  "repository" : "https://github.com/burrsutter/ti_sensortag_node",
+  "repository": "https://github.com/burrsutter/ti_sensortag_node",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sensortag": "0.1.11"
+    "sensortag": "^0.1.11"
   }
 }
