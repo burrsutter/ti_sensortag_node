@@ -6,19 +6,19 @@ SensorTag.discover(function(device) {
     console.log('connected');
     device.discoverServicesAndCharacteristics(function() {
       console.log('discovered services and characteristics');
-      device.enableMagnetometer(function() {
-        device.setMagnetometerPeriod(500, function() {
-          device.on('magnetometerChange', function(x, y, z) {
+      device.enableGyroscope(function() {
+        device.setGyroscopePeriod(500, function() {
+          device.on('gyroscopeChange', function(x, y, z) {
             console.log('\tx = %d ', x);
             console.log('\ty = %d ', y);
             console.log('\tz = %d ', z);
           });
 
-          device.notifyMagnetometer(function() {
-            console.log('notifyMagnetometer');
+          device.notifyGyroscope(function() {
+            console.log('notifyGyroscope');
           });
-        }); // setMagnetometerPeriod
-      }); // enableMagnetometer
+        }); // setGyroscopePeriod
+      }); // enableGyroscope
     }); // discoverServicesAndCharacteristics
   }); // connect
 }); // discover
