@@ -1,5 +1,6 @@
 # ti_sensortag_node
-Node.js examples for working with TI SensorTag + Raspberry Pi 2
+Node.js examples for working with TI SensorTag + Raspberry Pi (or Intel Edison)
+also works with CC2650 version of the TI SensorTag (arrived in 2015)
 
 http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTag&HQS=sensortag-bt
 
