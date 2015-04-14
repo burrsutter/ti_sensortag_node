@@ -11,3 +11,17 @@ sudo npm install sandeepmistry/node-sensortag
 
 sudo node index.js
 sudo node temp_humidity.js
+
+on Intel Edison,
+
+rfkill unblock bluetooth
+hciconfig hci0 up
+hcitool lescan
+
+hit the button on the side of the TISensorTag
+the TI will should show up
+hit Ctrl-C to break out of hcitool lescan
+
+npm install sandeepmistry/node-sensortag (assumes you are in as root)
+node temp_humidity.js
+
